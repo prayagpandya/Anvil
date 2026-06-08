@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronRight, Play, Factory, Wrench, Shield, Cog, Flame, Hammer, Cpu, Award, Users, Target, TrendingUp, CheckCircle2, Phone, MessageCircle } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
 import SectionHeader from "../components/SectionHeader";
+import heroVideo from "../assets/client/hero2.MP4";
 
 const slides = [
   {
@@ -11,7 +12,7 @@ const slides = [
     title: "ANVIL TECHNO FORGE",
     sub: "Closed Die Steel Forgings & Pipe Fittings",
     desc: "Engineering precision, delivering strength — one hot-forged component at a time.",
-    bg: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=2000&auto=format&fit=crop",
+    video: heroVideo,
   },
   {
     kicker: "MANUFACTURING CAPACITY",
@@ -101,7 +102,18 @@ export default function Home() {
                 transition={{ duration: 1.4, ease: "easeOut" }}
                 className="absolute inset-0"
               >
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${s.bg})` }} />
+                {s.video ? (
+                  <video
+                    src={s.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${s.bg || ""})` }} />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-black/40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                 <div className="absolute inset-0 grid-bg opacity-40" />
