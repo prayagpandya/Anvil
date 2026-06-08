@@ -30,16 +30,16 @@ export default function Navbar() {
   return (
     <>
       {/* Top bar */}
-      <div className="hidden lg:block border-b border-white/10 bg-black/70 backdrop-blur-sm">
+      <div className="hidden lg:block border-b border-neutral-200 bg-neutral-50/80 backdrop-blur-sm">
         <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-2 text-xs">
-          <div className="flex items-center gap-6 text-neutral-300">
+          <div className="flex items-center gap-6 text-neutral-600">
             <span className="flex items-center gap-2"><Phone size={13} className="text-[#D91E26]" /> +91 99980 22557 / +91 97254 88881</span>
             <span className="flex items-center gap-2"><Mail size={13} className="text-[#D91E26]" /> anviltechnoforge@gmail.com</span>
             <span className="flex items-center gap-2">📍 Shapar (Veraval), Rajkot, Gujarat 360024</span>
           </div>
-          <div className="flex items-center gap-4 text-neutral-300">
+          <div className="flex items-center gap-4 text-neutral-600">
             <span>ISO Certified Manufacturing</span>
-            <span className="w-px h-3 bg-white/10" />
+            <span className="w-px h-3 bg-neutral-200" />
             <span className="text-[#D91E26] font-semibold tracking-widest">CLOSED DIE FORGING SPECIALISTS</span>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
       <motion.header
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className={`sticky top-0 z-50 transition-all duration-500 ${scrolled ? "bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-[#D91E26]/30 shadow-[0_4px_30px_rgba(0,0,0,0.8)]" : "bg-transparent"
+        className={`sticky top-0 z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-lg border-b border-neutral-200/80 shadow-[0_2px_15px_rgba(0,0,0,0.05)]" : "bg-white border-b border-neutral-100"
           }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between py-4">
@@ -68,7 +68,7 @@ export default function Navbar() {
                 to={n.to}
                 end={n.to === "/"}
                 className={({ isActive }) =>
-                  `nav-link px-4 py-2 text-sm font-medium tracking-wide transition-colors ${isActive ? "text-[#D91E26]" : "text-neutral-200 hover:text-white"
+                  `nav-link px-4 py-2 text-sm font-medium tracking-wide transition-colors ${isActive ? "text-[#D91E26]" : "text-neutral-700 hover:text-neutral-900"
                   }`
                 }
               >
@@ -83,7 +83,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <button className="lg:hidden text-white p-2" onClick={() => setOpen(!open)}>
+          <button className="lg:hidden text-neutral-800 p-2" onClick={() => setOpen(!open)}>
             {open ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden fixed inset-x-0 top-[72px] bg-[#0a0a0a] border-t border-white/10 z-40"
+            className="lg:hidden fixed inset-x-0 top-[72px] bg-white border-t border-neutral-200 shadow-lg z-40"
           >
             <nav className="flex flex-col py-4">
               {navItems.map((n) => (
@@ -104,7 +104,7 @@ export default function Navbar() {
                   to={n.to}
                   end={n.to === "/"}
                   className={({ isActive }) =>
-                    `flex items-center justify-between px-6 py-4 border-b border-white/5 ${isActive ? "text-[#D91E26]" : "text-white"
+                    `flex items-center justify-between px-6 py-4 border-b border-neutral-100 ${isActive ? "text-[#D91E26]" : "text-neutral-800 hover:text-neutral-900"
                     }`
                   }
                 >
@@ -112,7 +112,7 @@ export default function Navbar() {
                   <ChevronRight size={16} />
                 </NavLink>
               ))}
-              <div className="px-6 py-4 flex flex-col gap-2 text-sm text-neutral-300">
+              <div className="px-6 py-4 flex flex-col gap-2 text-sm text-neutral-600">
                 <span>📞 +91 99980 22557</span>
                 <span>✉️ anviltechnoforge@gmail.com</span>
               </div>
