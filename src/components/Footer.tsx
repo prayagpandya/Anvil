@@ -107,8 +107,10 @@ export default function Footer() {
                 "Custom Forging Solutions",
                 "Pipe Fittings Manufacturing",
               ].map((c) => (
-                <li key={c} className="flex items-center gap-2 hover:text-neutral-900 transition-colors">
-                  <ArrowUpRight size={13} className="text-[#D91E26]" /> {c}
+                <li key={c}>
+                  <Link href="/capabilities" className="flex items-center gap-2 hover:text-neutral-900 transition-colors">
+                    <ArrowUpRight size={13} className="text-[#D91E26]" /> {c}
+                  </Link>
                 </li>
               ))}
             </ul>
