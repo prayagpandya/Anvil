@@ -94,7 +94,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-display text-lg tracking-widest text-neutral-900 mb-6 flex items-center gap-3">
-              <span className="w-8 h-[2px] bg-[#D91E26]" /> CAPABILITIES
+              <span className="w-8 h-[2px] bg-[#D91E26]" />  CAPABILITIES
             </h4>
             <ul className="space-y-3 text-neutral-600 text-sm">
               {[
