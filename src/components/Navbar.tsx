@@ -100,7 +100,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="Anvil Techno Forge"
-              className="h-10 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-20 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 

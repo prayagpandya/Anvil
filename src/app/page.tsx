@@ -71,14 +71,13 @@ const processSteps = [
 ];
 
 const infraCards = [
-  { title: "Raw Material Yard", img: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Cutting Area", img: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Tooling & Die Development", img: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Belt Drop Hammer", img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Closed Die Forging", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Die Shop", img: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Machining Facility", img: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1200&auto=format&fit=crop" },
-  { title: "CNC Machining", img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop" },
+  { title: "Raw Material Yard", img: "/assets/client/rawmaterialyard.webp" },
+  { title: "Cutting Area", img: "/assets/client/cutting area.webp" },
+  { title: "Tooling & Die Development", img: "/assets/client/toolingdieingfacility.webp" },
+  { title: "Belt Drop Hammer", img: "/assets/client/drophammer.webp" },
+  { title: "Closed Die Forging", img: "/assets/client/diedevelopement.webp" },
+  { title: "Die Shop", img: "/assets/client/dieshop.webp" },
+  { title: "CNC Machining", img: "/assets/client/cncarea.webp" },
 ];
 
 export default function Home() {
@@ -115,7 +114,7 @@ export default function Home() {
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${s.bg || ""})` }} />
+                  <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${s.bg || ""}')` }} />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-black/40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
@@ -165,7 +164,7 @@ export default function Home() {
                   <div className="flex flex-wrap gap-4">
                     <Link href="/products" className="btn-primary shine">Explore Products <ArrowRight size={16} /></Link>
                     <Link href="/infrastructure" className="btn-outline">Our Infrastructure <Play size={14} /></Link>
-                    <Link href="/contact" className="btn-outline">Get Quote</Link>
+                    <Link href="/contact" className="btn-outline">Contact us</Link>
                   </div>
                 </motion.div>
               )
@@ -492,9 +491,9 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className={`group relative overflow-hidden h-72 ${i === 0 || i === 5 ? "md:row-span-2 md:h-auto" : ""}`}
+                className={`group relative overflow-hidden h-72 ${i === 0 ? "md:row-span-2 md:h-auto" : ""}`}
               >
-                <div className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: `url(${c.img})` }} />
+                <div className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style={{ backgroundImage: `url('${c.img}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                 <div className="absolute inset-0 border border-white/10 group-hover:border-[#D91E26] transition-colors" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
