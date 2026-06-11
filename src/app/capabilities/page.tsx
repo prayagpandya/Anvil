@@ -83,7 +83,7 @@ export default function Capabilities() {
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { group: "INPUT", items: ["Tooling & Die Development", "Laboratory & Inspection of Raw Material", "Raw Material Cutting"] },
-              { group: "FORMING", items: ["Closed Die Forging", "Heat Treatment", "Surface Treatment"] },
+              { group: "FORGING", items: ["Closed Die Forging", "Heat Treatment", "Surface Treatment"] },
               { group: "TESTING", items: ["NDT Testing", "UT Testing", "MPI Testing", "Dye Penetrant Inspection"] },
               { group: "FINISHING", items: ["Machining", "Passivation", "Zinc Plating", "Identification Marking", "Packing & Storage"] },
             ].map((g, gi) => (

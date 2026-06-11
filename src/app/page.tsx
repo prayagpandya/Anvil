@@ -7,7 +7,7 @@ import { ArrowRight, ChevronRight, Play, Factory, Wrench, Shield, Cog, Flame, Ha
 import AnimatedCounter from "@/components/AnimatedCounter";
 import SectionHeader from "@/components/SectionHeader";
 
-const heroVideo = "/assets/client/hero2.MP4";
+const heroVideo = "/assets/client/hero2.webm";
 
 const slides = [
   {
@@ -206,7 +206,7 @@ export default function Home() {
           {[
             { v: 350, s: "MT", l: "Monthly Production" },
             { v: 25, s: "+", l: "Years Machine Shop" },
-            { v: 7, s: "+", l: "Years Forging Industry" },
+            { v: 15, s: "+", l: "Years Forging Industry" },
             { v: 21, s: "KG", l: "Regular Weight Capability" },
           ].map((c, i) => {
             const borderClasses =
@@ -278,7 +278,7 @@ export default function Home() {
                 {
                   yr: "03",
                   title: "Experienced Leadership",
-                  body: "Our company is run by well-experienced and qualified individuals with more than 25 years of experience in the machine shop and over 7 years of experience in the forging industries.",
+                  body: "Our company is run by well-experienced and qualified individuals with more than 25 years of experience in the machine shop and over 15 years of experience in the forging industries.",
                 },
                 {
                   yr: "04",

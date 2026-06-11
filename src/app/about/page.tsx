@@ -9,7 +9,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 
 const timeline = [
   { yr: "FOUNDATION", title: "Machine Shop Legacy", body: "Over 25 years of deep-rooted experience in the machine shop industry — a foundation of precision engineering and operational excellence." },
-  { yr: "FORGING UNIT", title: "Anvil Techno Forge Established", body: "Over 7 years of dedicated forging expertise added to our legacy, bringing closed die forging capability to our integrated manufacturing portfolio." },
+  { yr: "FORGING UNIT", title: "Anvil Techno Forge Established", body: "Over 15 years of dedicated forging expertise added to our legacy, bringing closed die forging capability to our integrated manufacturing portfolio." },
   { yr: "TODAY", title: "350 MT Monthly Capacity", body: "A fully functional die shop, forge shop and CNC machine shop operating at 350 metric tons monthly production, handling regular weights up to 21 kg." },
 ];
 
@@ -203,7 +203,7 @@ export default function About() {
         <div className="absolute inset-0 grid-bg opacity-20" />
         <div className="relative max-w-[1400px] mx-auto px-6">
           <SectionHeader kicker="LEADERSHIP TEAM" title={<>Board of <span className="text-[#D91E26]">Directors</span>.</>} />
-          
+
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "Dinesh Detroja", role: "Director", img: "/assets/client/dineshdetroja.webp" },
@@ -221,7 +221,7 @@ export default function About() {
                 <div className="relative aspect-[3/4] overflow-hidden bg-neutral-950">
                   <img src={d.img} alt={d.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-                  
+
                   <div className="absolute bottom-6 left-6 right-6">
                     <h3 className="font-display text-2xl text-white tracking-wide leading-tight group-hover:text-[#D91E26] transition-colors">{d.name}</h3>
                     <div className="font-bebas text-sm text-[#D91E26] mt-1 tracking-widest">{d.role}</div>
@@ -284,7 +284,7 @@ export default function About() {
                   d="M 0 180 L 60 160 L 120 140 L 180 110 L 240 80 L 300 50 L 400 20 L 400 200 L 0 200 Z"
                   fill="url(#gred)"
                 />
-                {[[0,180],[60,160],[120,140],[180,110],[240,80],[300,50],[400,20]].map(([x, y], i) => (
+                {[[0, 180], [60, 160], [120, 140], [180, 110], [240, 80], [300, 50], [400, 20]].map(([x, y], i) => (
                   <motion.circle key={i} cx={x} cy={y} r="4" fill="#D91E26"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
