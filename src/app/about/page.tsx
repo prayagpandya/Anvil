@@ -204,7 +204,7 @@ export default function About() {
         <div className="relative max-w-[1400px] mx-auto px-6">
           <SectionHeader
             kicker="Leadership Team"
-            title={<>Meet the <span className="text-[#D91E26]">Experts Behind Our Success</span>.</>}
+            title={<>Meet the <span className="text-[#D91E26]">Leaders Behind Our Success</span>.</>}
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
