@@ -202,12 +202,14 @@ export default function About() {
       <section className="relative py-24 lg:py-32 bg-black border-t border-white/10">
         <div className="absolute inset-0 grid-bg opacity-20" />
         <div className="relative max-w-[1400px] mx-auto px-6">
-          <SectionHeader kicker="LEADERSHIP TEAM" title={<>Board of <span className="text-[#D91E26]">Directors</span>.</>} />
-
+          <SectionHeader
+            kicker="Leadership Team"
+            title={<>Meet the <span className="text-[#D91E26]">Experts Behind Our Success</span>.</>}
+          />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "Dinesh Detroja", role: "Director", img: "/assets/client/dineshdetroja.webp" },
-              { name: "Sailesh Ladani", role: "Director", img: "/assets/client/saileshladani.webp" },
+              { name: "Shailesh Ladani", role: "Director", img: "/assets/client/saileshladani.webp" },
               { name: "Bhargav Detroja", role: "Director", img: "/assets/client/bhargavdetroja.webp" },
             ].map((d, i) => (
               <motion.div
