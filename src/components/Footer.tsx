@@ -152,7 +152,12 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500 border-t border-neutral-200 pt-6">
-          <p>© {new Date().getFullYear()} ANVIL TECHNO FORGE. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} ANVIL TECHNO FORGE. All rights reserved. | Powered by{" "}
+            <a href="https://festiviya.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#D91E26] hover:underline">
+              FESTIVIYA
+            </a>
+          </p>
           <p className="tracking-widest">ENGINEERED IN GUJARAT • FORGED FOR THE WORLD</p>
           <p>Designed for Industrial Excellence</p>
         </div>

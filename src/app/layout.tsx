@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     "pipe fittings",
     "pipe flanges"
   ],
+  icons: {
+    icon: "/assets/logo.png",
+    shortcut: "/assets/logo.png",
+    apple: "/assets/logo.png",
+  },
   openGraph: {
     type: "website",
     title: "ANVIL TECHNO FORGE | Closed Die Steel Forgings & Pipe Fittings",
