@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     "pipe flanges"
   ],
   icons: {
-    icon: "/assets/logo.png",
-    shortcut: "/assets/logo.png",
-    apple: "/assets/logo.png",
+    icon: "/assets/favicon.png",
+    shortcut: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
   },
   openGraph: {
     type: "website",
